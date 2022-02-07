@@ -27,7 +27,7 @@
 			<div class="row">
 				<div class="contacto col-md-3 col-6">
 					<div>
-						<span>L-V 09:00-20:00</span>
+						<i class="fas fa-bars"></i><span>L-V 09:00-20:00</span>
 						<a href="tel:+8555542310">+(85) 555-423-108</a>
 					</div>
 				</div>
@@ -35,8 +35,9 @@
 				<div id="logo" class="col-md-6 col-12"><img src="img/logo.fw.png" title="logo" /></div>
 				<div class="user-utils col-md-3 col-6">
 					<div>
-						<a href="#" id="shopping-cart"><i class="fas fa-shopping-cart"></i><span>0</span>Carrito</a>
-						<a href="#" id="my-account"><i class="fas fa-user"></i>Mi cuenta</a>
+						<a href="#" id="shopping-cart"><i
+								class="fas fa-shopping-cart"></i><span>0</span><a>Carrito</a></a>
+						<a href="#" id="my-account"><i class="fas fa-user"></i><a>Mi cuenta</a></a>
 					</div>
 				</div>
 			</div>
@@ -57,10 +58,6 @@
 
 	<div class="container">
 		<div id="main" class="row">
-			<!-- NO TOCAR DE AQUÍ PARA ARRIBA -->
-
-
-
 			<div class="cart col-md-8 col-12">
 				<h3>Artículos en tu cesta</h3>
 				<table class="cesta">
@@ -84,7 +81,7 @@
 					</tr>
 					<tr class="f3">
 						<td><img src="img/producto2.jpg" title="coolpc" /></td>
-						<td>Cougar MARS - Escritorio Gaming</td>
+						<td>Cougar MARS - Escritorio</td>
 						<td>RGB</td>
 						<td><input type="number" placeholder="1" step="1" min="1" max="99" id="number"></td>
 						<td><span>249,95 €</span></td>
@@ -94,31 +91,45 @@
 				</table>
 			</div>
 			<div class="cart col-md-4 col-12">
-				<h3>Resumen de pedido</h3>
 				<table class="total">
 					<tr class="total1">
-						<td>Con <span>PcMax Professional</span> puedes beneficiarte de gastos de envío GRATIS y de muchas otras
+						<td>Con <span>PcMax Professional</span> puedes beneficiarte de gastos de envío GRATIS y de
+							muchas otras
 							ventajas.</td>
 					</tr>
 					<tr class="total2">
 						<td>(Ver detalles)</td>
 					</tr>
 					<tr class="total3">
-						<td><label><input type="checkbox" id="cbox1" value="first_checkbox"> Contratar PcMax Professional</label></td>
+						<td><label><input type="checkbox" id="cbox1" value="first_checkbox"> Contratar PcMax
+								Professional</label></td>
 					</tr>
 					<tr class="total4">
-						<td><hr></td>
+						<td>
+							<hr>
+						</td>
 					</tr>
 					<tr class="total5">
 						<td>TOTAL <span>1.599,95 €</span></td>
-						
 					</tr>
 				</table>
+				<button class="comprar">Realizar pedido</button>
 			</div>
 
 
 
 			<!-- NO TOCAR DE AQUÍ PARA ABAJO -->
+		</div>
+		<div class="inform">
+			<div class="inform1"><i class="fas fa-truck-moving"></i> Envío gratuito a tienda</div>
+			<div class="inform1"><i class="fas fa-recycle"></i> Devoluciones gratuitas
+			</div>
+			<div class="inform1"><i class="fas fa-laptop"></i> Artículos nuevos diarios</div>
+		</div>
+		<div class="adicional">
+			<p>*Artículos personalizados hasta 15 días. Durante la temporada de descuentos, promociones y campañas
+				especiales, los envíos pueden sufrir retrasos puntuales.
+				Los pedidos de artículos personalizados no se pueden cancelar.</p>
 		</div>
 	</div>
 

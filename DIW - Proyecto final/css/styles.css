@@ -1,161 +1,344 @@
 * {
     font-family: 'Segoe UI Regular';
-     
+
 }
-ul.menu{
+
+ul.menu {
     background-color: black;
 }
 
-ul.menu li a{
+ul.menu li a {
     color: white;
-    font-size:20px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
-ul.menu li{
-    padding:30px;
-    margin:0 0;
+ul.menu li {
+    padding: 30px;
+    margin: 0 0;
 }
 
-ul.menu li a:hover{
+ul.menu li a:hover {
     color: white;
 }
 
-ul.menu li:hover{
+ul.menu li:hover {
     background-color: #F36917;
 }
 
-.container-fluid{
-    background-color: white;    
+.container-fluid {
+    background-color: white;
 }
-header .contacto>div{
+
+header .contacto>div {
     vertical-align: bottom;
 }
 
-header .contacto>div a, header .user-utils>div a{
-   font-size: 20px;
-   color: #F36917;
-   font-weight: bold;
-   text-decoration: none;
+header .contacto>div a, header .user-utils>div a {
+    font-size: 20px;
+    color: #F36917;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-header .contacto>div span{
+header .contacto>div span {
     font-size: 20px;
     color: black;
     font-weight: bold;
-    
+
 }
 
-.fa-user:before, .fa-shopping-cart:before{
+.fa-user:before, .fa-shopping-cart:before {
     font-size: 40px;
     color: #F36917;
-    
+
 }
 
-header .user-utils #shopping-cart > span{
+header .user-utils #shopping-cart>span {
     font-size: 12px;
     color: white;
     font-weight: bold;
 }
-header .user-utils>div{
+
+header .user-utils>div {
     vertical-align: bottom;
 }
 
-footer{
+footer {
     background-color: #F36917;
-    color:white;
+    color: white;
 }
 
-footer .footer_links ul li a{
-    color:white;
-    
+footer .footer_links ul li a {
+    color: white;
+
 }
-footer .footer_links ul li{    
+
+footer .footer_links ul li {
     text-align: center;
- 
+
 }
 
-footer .footer_links ul li a:hover{    
-    color:black;
-    font-weight:bold;
+footer .footer_links ul li a:hover {
+    color: black;
+    font-weight: bold;
 }
 
-footer .footer_links h4{
-    font-weight:bold;
+footer .footer_links h4 {
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-        
+
 }
 
-.copyright{
+.copyright {
     background-color: black;
-    color:white;
+    color: white;
     font-size: 18px;
 }
 
-#main h3{
-    color:black;
-    font-weight:bold;
+#main h3 {
+    color: black;
+    font-weight: bold;
     text-align: left;
 }
 
-.cesta{
+.cesta {
     text-align: center;
 }
 
 .cesta .f1 {
-  table-layout: fixed;
-  width: 100%; 
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  background-color: rgb(226, 226, 226);
-  text-transform: uppercase;
-  font-weight:bold;
-  
+    table-layout: fixed;
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    font-weight: bold;
+
 }
 
 .cesta .f1 td {
-    padding:20px;
-    
-  }
+    padding: 20px;
 
-.fa-times{
-    color:red;
+}
+
+.fa-times {
+    color: red;
     font-size: 24px;
-  }
+}
 
-  .cesta input{
-      width: 40%;
-  }
+.fa-times:hover {
+    opacity: 0.5;
+}
 
-  .total{
+.cesta input {
+    width: 40%;
+}
+
+.total {
     table-layout: fixed;
-    width: 100%; 
+    width: 100%;
     border: 1px solid black;
-    border-bottom-style:dashed;
-       
-  }
+    border-bottom-style: dashed;
 
-  .total .total2{
-    color:red;        
-  }
+}
 
-  .total td{
-   padding:2.5%;       
-  }
-  .total tr:nth-child(3),.total tr:nth-child(2){
-    font-weight:bold;        
-   }
-   .total tr:last-child{
-    font-size:20px;        
-   }
+.total .total2 {
+    color: red;
+}
 
-   .total tr:last-child span{
-    font-weight:bold; 
-    float:right;
-           
-   }
-   
+.total td {
+    padding: 2%;
+}
+
+.total tr:nth-child(3), .total tr:nth-child(2) {
+    font-weight: bold;
+}
+
+.total tr:last-child {
+    font-size: 20px;
+}
+
+.total tr:last-child span {
+    font-weight: bold;
+    float: right;
+
+}
+
+.comprar {
+    margin-top: 1%;
+    font-size: 18px;
+    padding: 8px 16px;
+    border: 1px solid #F36917;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #F36917;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.comprar:hover {
+    opacity: 0.8;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+hr {
+    color: black;
+}
+
+.inform {
+
+
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4%;
+
+
+}
+
+.inform1 {
+    display: inline-block;
+    width: 32%;
+    padding: 4%;
+    text-align: center;
+
+}
+
+.adicional {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.fa-truck-moving, .fa-recycle, .fa-laptop {
+    font-size: 50px;
+}
+
+.cesta .f2 td:nth-child(5) {
+    text-decoration: line-through;
+}
 
 
 
+/* MOBILE */
+@media(max-width: 460px) {
+
+    /* CABECERA */
+    header .contacto>div>span {
+        display: none;
+    }
+
+    header .contacto {
+        order: 1;
+    }
+
+    header .user-utils {
+        order: 2;
+    }
+
+    header #logo {
+        order: 3;
+    }
+
+    #logo img {
+        width: 60px;
+        position: absolute;
+        top: 0;
+        left: 40%;
+        margin-top: 2%;
+    }
+
+    header .contacto>div a {
+        font-size: 16px;
+        display: none;
+    }
+
+    .fa-bars {
+        color: black;
+        font-size: 40px;
+        display: flex;
+        cursor: pointer;
+    }
+
+    /* MENÚ */
+    .menu {
+        width: 70%;
+        margin-top: 3%;
+        display: none;
+    }
+
+    ul.menu {}
+
+    ul.menu>li a {
+        font-size: 30px;
+    }
+
+    /* PIE DE PÁGINA */
+    footer .footer_links h4, footer .footer_links ul {
+        text-align: center;
+    }
+
+    .cesta .f1 {
+        display: none;
+    }
+
+    .cesta .f2>td:nth-child(1), .cesta .f2>td:nth-child(2), .cesta .f2>td:nth-child(3) {
+        display: inline;
+    }
+
+    .cesta .f3>td:nth-child(1), .cesta .f3>td:nth-child(2), .cesta .f3>td:nth-child(3) {
+        display: inline-block;
+    }
+
+
+    .cesta .f3>td, .cesta .f2>td {
+        margin: 2%;
+
+    }
+
+    .cesta .f2>td {
+        width: 25%;
+    }
+
+    header .user-utils>div a:last-child {
+        display: none;
+    }
+
+    header .user-utils>div a:nth-child(2) {
+        display: none;
+    }
+
+    /* Cabecera de la página */
+    footer {
+
+        margin: auto;
+    }
+
+    .footer_links {
+        columns: 1;
+        text-align: center;
+
+    }
+
+    .footer_links .column {
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin: 20px;
+    }
+
+    .footer_links .column h4 {
+        font-size: 30px;
+    }
+
+    .column ul li a {
+        font-size: 20px;
+    }    
+}
