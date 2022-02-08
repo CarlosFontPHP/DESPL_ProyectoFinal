@@ -36,7 +36,7 @@ header .contacto>div {
 
 header .contacto>div a, header .user-utils>div a {
     font-size: 20px;
-    color: #F36917;
+    color: black;
     font-weight: bold;
     text-decoration: none;
 }
@@ -55,9 +55,17 @@ header .contacto>div span {
 }
 
 header .user-utils #shopping-cart>span {
-    font-size: 12px;
-    color: white;
-    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;    
+    border-radius: 0px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    margin-left: -8px;
+    padding: 0;
+    line-height: 0px;
+    text-align: center;
 }
 
 header .user-utils>div {
@@ -66,11 +74,11 @@ header .user-utils>div {
 
 footer {
     background-color: #F36917;
-    color: white;
+    color: black;
 }
 
 footer .footer_links ul li a {
-    color: white;
+    color: black;
 
 }
 
@@ -145,7 +153,7 @@ footer .footer_links h4 {
 }
 
 .total .total2 {
-    color: #F36917;
+    color: black;
 }
 
 .total td {
@@ -172,10 +180,11 @@ footer .footer_links h4 {
     padding: 8px 16px;
     border: 1px solid #F36917;
     border-radius: 5px;
-    color: #fff;
+    color: black;
     background-color: #F36917;
     text-transform: uppercase;
     width: 100%;
+    font-weight: bold;
 }
 
 .comprar:hover {
@@ -225,20 +234,21 @@ hr {
     text-decoration: line-through;
 }
 
-.max{
-    color:green;
+.max {
+    color: green;
     font-weight: bold;
 }
 
-.gastos_envio{
-    color:red;
+.gastos_envio {
+    color: red;
     font-weight: bold;
 }
-.noexists{
-    margin-top:5%;
+
+.noexists {
+    margin-top: 5%;
     font-size: 30px;
-    color:#F36917; 
-    
+    color: #F36917;
+
 }
 
 #totop {
@@ -249,7 +259,7 @@ hr {
     bottom: 114px;
     width: 44px;
     height: 44px;
-    background: #F36917;    
+    background: #F36917;
     z-index: 9999;
     cursor: pointer;
     text-align: center;
@@ -261,6 +271,14 @@ hr {
     color: black;
 }
 
+header .user-utils>div>#my-account i {
+    color: black;
+}
+
+header .user-utils #shopping-cart>span {
+    background-color: white;
+   
+}
 
 /* MOBILE */
 @media(max-width: 460px) {
@@ -375,5 +393,5 @@ hr {
 
     .column ul li a {
         font-size: 20px;
-    }    
+    }
 }
