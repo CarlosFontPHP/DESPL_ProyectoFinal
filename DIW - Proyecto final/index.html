@@ -16,7 +16,7 @@
 	<link rel="icon" href="img/logo.fw.png" type="image/png" />
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+
 
 	<title>DIW - Proyecto final</title>
 </head>
@@ -35,8 +35,8 @@
 				<div id="logo" class="col-md-6 col-12"><img src="img/logo.fw.png" title="logo" /></div>
 				<div class="user-utils col-md-3 col-6">
 					<div>
-						<a href="#" id="shopping-cart"><i
-								class="fas fa-shopping-cart"></i><span>0</span><a>Carrito</a></a>
+						<a href="#" id="shopping-cart"><i class="fas fa-shopping-cart"></i><span
+								class="ncart">0</span><a>Carrito</a></a>
 						<a href="#" id="my-account"><i class="fas fa-user"></i><a>Mi cuenta</a></a>
 					</div>
 				</div>
@@ -75,8 +75,8 @@
 						<td>COOLPC Serious Gaming II</td>
 						<td>Negro/RGB</td>
 						<td><input type="number" placeholder="1" step="1" min="1" max="99" id="number"></td>
-						<td><span>1.399,95 €</span></td>
-						<td>1.199,95 €</td>
+						<td><span>1399.95</span> €</td>
+						<td><span class="price">1199.95</span> €</td>
 						<td><i class="fas fa-times"></i></td>
 					</tr>
 					<tr class="f3">
@@ -84,11 +84,12 @@
 						<td>Cougar MARS - Escritorio</td>
 						<td>RGB</td>
 						<td><input type="number" placeholder="1" step="1" min="1" max="99" id="number"></td>
-						<td><span>249,95 €</span></td>
-						<td><span>249,95 €</span></td>
+						<td><span>249.95</span> €</td>
+						<td><span class="price">249.95</span> €</td>
 						<td><i class="fas fa-times"></i></td>
 					</tr>
 				</table>
+				<div class="noexists"></div>
 			</div>
 			<div class="cart col-md-4 col-12">
 				<table class="total">
@@ -101,8 +102,15 @@
 						<td>(Ver detalles)</td>
 					</tr>
 					<tr class="total3">
-						<td><label><input type="checkbox" id="cbox1" value="first_checkbox"> Contratar PcMax
+						<td><label><input type="checkbox" id="cbox1" value="first_checkbox" onchange="total()">
+								Contratar PcMax
 								Professional</label></td>
+					</tr>
+					<tr class="pcmax">
+						<td><label class="max"></label></td>
+					</tr>
+					<tr class="gastos">
+						<td><label class="gastos_envio"></label></td>
 					</tr>
 					<tr class="total4">
 						<td>
@@ -110,7 +118,7 @@
 						</td>
 					</tr>
 					<tr class="total5">
-						<td>TOTAL <span>1.599,95 €</span></td>
+						<td>TOTAL <span class="totalfinal"></span> €</td>
 					</tr>
 				</table>
 				<button class="comprar">Realizar pedido</button>
@@ -174,6 +182,7 @@
 
 	<div class="copyright">Proyecto final de Diseño de Interfaces Web. ILERNA 2022</div>
 	<div id="totop"><i class="fas fa-arrow-up"></i></div>
+	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>

@@ -145,7 +145,7 @@ footer .footer_links h4 {
 }
 
 .total .total2 {
-    color: red;
+    color: #F36917;
 }
 
 .total td {
@@ -225,6 +225,41 @@ hr {
     text-decoration: line-through;
 }
 
+.max{
+    color:green;
+    font-weight: bold;
+}
+
+.gastos_envio{
+    color:red;
+    font-weight: bold;
+}
+.noexists{
+    margin-top:5%;
+    font-size: 30px;
+    color:#F36917; 
+    
+}
+
+#totop {
+    font-size: 30px;
+    display: none;
+    position: fixed;
+    right: 55px;
+    bottom: 114px;
+    width: 44px;
+    height: 44px;
+    background: #F36917;    
+    z-index: 9999;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 20px;
+}
+
+#totop i {
+    color: black;
+}
 
 
 /* MOBILE */
