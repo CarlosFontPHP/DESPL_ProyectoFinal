@@ -1,6 +1,5 @@
 * {
-    font-family: 'Segoe UI Regular';
-
+    font-family: 'Roboto', sans-serif;
 }
 
 ul.menu {
@@ -136,12 +135,17 @@ footer .footer_links h4 {
     font-size: 24px;
 }
 
+.fa-times:focus {
+    color: red;
+    opacity: 0.5;
+}
+
 .fa-times:hover {
     opacity: 0.5;
 }
 
 .cesta input {
-    width: 40%;
+    width: 60%;
 }
 
 .total {
@@ -284,8 +288,12 @@ header .user-utils #shopping-cart>span {
 @media(max-width: 460px) {
 
     /* CABECERA */
+
+    header .user-utils>div a{
+        
+    }
     header .contacto>div>span {
-        display: none;
+        
     }
 
     header .contacto {
@@ -325,9 +333,7 @@ header .user-utils #shopping-cart>span {
         width: 70%;
         margin-top: 3%;
         display: none;
-    }
-
-    ul.menu {}
+    }   
 
     ul.menu>li a {
         font-size: 30px;
@@ -359,13 +365,9 @@ header .user-utils #shopping-cart>span {
     .cesta .f2>td {
         width: 25%;
     }
-
-    header .user-utils>div a:last-child {
-        display: none;
-    }
-
-    header .user-utils>div a:nth-child(2) {
-        display: none;
+   
+    header .user-utils>div a label {
+       display: none;
     }
 
     /* Cabecera de la página */

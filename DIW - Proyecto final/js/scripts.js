@@ -1,9 +1,13 @@
+/* Calcularemos el resumen del pedido dependiendo de la cantidad de productos, el precio, si es premium o no y los costes de envio.
+Tambien controlaremos la cantidad de productos en el carrito y si hay o no productos*/
+
 function total() {
 
     var suma = 0;
     var costes = 1.99;
     var pcmax = 10;
     var cantidad = 0;
+
     $(".cesta tr").each(function () {
         if (!$(this).hasClass("f1")) {
             suma += parseFloat($(this).find(".price").text());
@@ -40,15 +44,19 @@ function total() {
     $(".ncart").text(cantidad);
     $(".noexists").show();
 
-
 }
+
 $(document).ready(function () {
     total();
+
+    // Menú hamburguesa en vista movil
+
     $(".fa-bars").click(function () {
         $(".menu").fadeToggle();
     });
 
     $(".cesta .f2 td:nth-child(7)").click(function () {
+        // Servira para quitar los productos
         $(".f2").remove();
         total();
 
@@ -60,10 +68,11 @@ $(document).ready(function () {
 
     });
 
+
     $(".noexists").hide();
 
     $(document).scroll(function () {
-
+        // Para que aparezca la flecha cuando se haga scroll hacia abajo
         if ($(this).scrollTop() > 0) {
             $('#totop').fadeIn(500);
         } else {
@@ -71,6 +80,7 @@ $(document).ready(function () {
         }
     });
     $('#totop').click(function () {
+        //Si picamos en la flecha nos lleva al principio del documento
         $("html, body").animate({ scrollTop: 0 }, 600);
     });
 
